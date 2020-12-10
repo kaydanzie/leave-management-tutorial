@@ -7,13 +7,10 @@ namespace leave_management.Models
 {
     public class LeaveHistoryVM
     {
-
         public int Id { get; set; }
-
 
         public EmployeeVM RequestingEmployee { get; set; }
         public string RequestingEmployeeId { get; set; }
-
 
         public EmployeeVM ApprovedBy { get; set; }
         public string ApprovedById { get; set; }
