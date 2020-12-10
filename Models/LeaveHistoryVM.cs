@@ -23,7 +23,7 @@ namespace leave_management.Models
         public DateTime DateRequested { get; set; }
         public DateTime DateActioned { get; set; }
 
-        public DetailsLeaveTypeVM LeaveType { get; set; }
+        public LeaveTypeVM LeaveType { get; set; }
         public int LeaveTypeId { get; set; }
         public IEnumerable<SelectListItem> LeaveTypes { get; set; }
 
