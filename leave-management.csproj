@@ -29,4 +29,7 @@
     <Folder Include="Mappings\" />
     <Folder Include="Views\LeaveTypes\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Pages\_ValidationScriptsPartial.cshtml" />
+  </ItemGroup>
 </Project>
