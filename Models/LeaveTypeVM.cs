@@ -12,5 +12,10 @@ namespace leave_management.Models
 
         [Display(Name = "Date Created")]
         public DateTime? DateCreated { get; set; }
+
+        [Required]
+        [Range(1,25, ErrorMessage = "Please enter a number between 1 and 25")]
+        [Display(Name="Default Number of Days")]
+        public int DefaultDays { get; set; }
     }
 }
