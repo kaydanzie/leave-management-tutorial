@@ -24,4 +24,10 @@ namespace leave_management.Models
 
         public int Period { get; set; }
     }
+
+    public class CreateLeaveAllocationVM
+    {
+        public int NumberUpdated { get; set; }
+        public List<LeaveTypeVM> LeaveTypes { get; set; }
+    }
 }
