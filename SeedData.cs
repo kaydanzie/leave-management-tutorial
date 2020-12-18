@@ -23,6 +23,17 @@ namespace leave_management
                     userManager.AddToRoleAsync(user, "Administrator").Wait();
                 }
             }
+
+            if (userManager.FindByNameAsync("employee").Result == null)
+            {
+                var user = new IdentityUser { UserName = "employee@localhost.com", Email = "employee@localhost.com" };
+                var result = userManager.CreateAsync(user, "Password1@").Result;
+
+                if (result.Succeeded)
+                {
+                    userManager.AddToRoleAsync(user, "Employee").Wait();
+                }
+            }
         }
 
         private static void SeedRoles(RoleManager<IdentityRole> roleManager)
